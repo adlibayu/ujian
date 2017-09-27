@@ -1,0 +1,48 @@
+<html>
+<head>
+<title>Adli Bayu</title>
+<script>
+function tampilkan(){
+ 
+  var identitas_orang=document.getElementById("form1").select1.value;
+  var p_kontainer=document.getElementById("container");
+ 
+  if (identitas_orang=="Ari Wijaya")
+    {
+        p_kontainer.innerHTML="Ari Wijaya merupakan Makhluk Teromes Di Kelas XII RPL 1";
+    }
+  else if (identitas_orang=="M Kemal Hidayatullah")
+    {
+        p_kontainer.innerHTML="M Kemal Hidayatullah merupakan Orang yang memiliki fasilitas lengkap mengenai IT";
+    }
+  else if (identitas_orang=="Aditya")
+    {
+        p_kontainer.innerHTML="Aditya merupakan Manusia tercerdik no.2 di kelas XII RPL 1";
+    }
+  else if (identitas_orang=="Bayu Adli")
+    {
+        p_kontainer.innerHTML="Bayu Adli merupakan manusia paling hebat dalam mengerjakan 1 hal,namun tidak bisa 2 hal";
+    }
+}
+</script>
+</head>
+<body img src="mg.jpg" width="200" >
+	<center>	
+		<h2> Ujian Apk Adli Bayu</h2>
+		<img src="mg.jpg" width="200" />
+		
+	<form id="form1" name="form1" onsubmit="return false">
+  <label for="select1">Pilih Nama: </label>
+  <select id="select1" name="select1">
+    <option value="Ari Wijaya">Pijay</option>
+    <option value="M Kemal Hidayatullah">Kemal</option>
+    <option value="Bayu Adli">Adli</option>
+	<option value="Aditya">Aditya</option>
+  </select>
+  <input type="submit" value="Tampilkan Keterangan" onclick="tampilkan()">
+</form>
+ 
+<p id="container"></p>
+</center>
+</body>
+</html>
